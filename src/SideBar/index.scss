@@ -1,0 +1,57 @@
+.page-sidebar {
+  display: flex;
+  align-items: center;
+  height: 2.75rem;
+  padding: 0 0.875rem;
+  font-size: 1.125rem;
+  text-align: left;
+  color: #fff;
+  background-color: #00a2ed;
+  .sidebar-svg {
+    position: relative;
+    display: inline-block;
+    width: 1.25rem;
+    height: 100%;
+    > div {
+      position: absolute;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+      transform: translateY(-50%);
+    }
+    svg {
+      display: table-cell;
+      vertical-align: middle;
+      width: 1.125rem;
+      height: 1.125rem;
+      color: #fff;
+    }
+  }
+  .message svg {
+    margin-top: 2px;
+  }
+  .left {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    .title {
+      text-indent: 1.875rem;
+    }
+  }
+  .right {
+    display: flex;
+    height: 100%;
+    flex: 1;
+    align-items: center;
+    justify-content: flex-end;
+    .text {
+      font-size: 1rem;
+      padding-left: 3px;
+    }
+  }
+  .group {
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    color: #fff;
+  }
+}

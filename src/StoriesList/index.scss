@@ -1,0 +1,69 @@
+.stories-list {
+  .slider {
+    height: 17.3333rem;
+    .slick-list {
+      height: 100%;
+    }
+    .slide {
+      position: relative;
+      .slide-img {
+        width: 100%;
+        height: 17.3333rem;
+      }
+      .slide-text {
+        position: absolute;
+        left: 0;
+        bottom: 0.6667rem;
+        width: 100%;
+        padding: 0.6667rem;
+        line-height: 1.2;
+        box-sizing: border-box;
+        text-align: left;
+        font-size: 1.0667rem;
+        color: #fff;
+      }
+    }
+    .slick-dots {
+      bottom: 0;
+      > li {
+        width: 10px;
+        height: 18px;
+        > button::before {
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+.stories-section {
+  .head-title {
+    padding: 1.1333rem 0.6667rem 0.6667rem 0.6667rem;
+    font-size: 1rem;
+    text-align: left;
+    color: #717171;
+  }
+  .list {
+    .item {
+      display: flex;
+      flex-direction: row;
+      padding: 0.6667rem 0.3333rem;
+      margin: 0.4667rem 0.6667rem 0;
+      background-color: #fff;
+      border-radius: 4px;
+      box-shadow: 0 3px 3px -2px rgba(0, 0, 0, 0.15),
+        0 3px 4px 0 rgba(0, 0, 0, 0.1), 0 1px 8px 0 rgba(0, 0, 0, 0.08);
+      > img {
+        width: 5.3333rem;
+        height: 4.6667rem;
+        object-fit: cover;
+      }
+      .text {
+        flex: 1;
+        margin-right: 0.3333rem;
+        font-size: 1.1333rem;
+        text-align: left;
+        color: #222;
+      }
+    }
+  }
+}
