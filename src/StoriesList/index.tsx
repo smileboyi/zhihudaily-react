@@ -136,6 +136,7 @@ const StoriesList: React.FC = memo(() => {
     };
   }, []);
 
+  // 使用hook对请求的封装：https://zhuanlan.zhihu.com/p/63220398
   const firstFetchStories = useCallback(() => {
     appDispatch({
       type: 'RESET_SLIDEIDS_ARR'
@@ -204,7 +205,7 @@ const StoriesList: React.FC = memo(() => {
           });
           let storiesIds = localStorage.getItem('storiesIds') || '[]';
           storiesIds = JSON.parse(storiesIds).concat(ids);
-          localStorage.setItem('storiesIds', JSON.stringify(ids));
+          localStorage.setItem('storiesIds', JSON.stringify(storiesIds));
         }
       })
       .catch((e: AxiosError) => {
